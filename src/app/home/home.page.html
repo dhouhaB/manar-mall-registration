@@ -1,9 +1,9 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+ <!--<ion-toolbar>
     <ion-title>
-      Blank
+
     </ion-title>
-  </ion-toolbar>
+  </ion-toolbar>--> 
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -13,8 +13,44 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" style="display: block; align-items: center;justify-content: center;text-align: center;">
+
+    <ion-row style="margin-top: -10px;" >
+      <ion-col>
+        <h1 >مرحبا بكم في </h1>
+        <h1>Welcome to </h1>  
+      </ion-col>
+     
+    </ion-row >
+
+
+    <ion-row >
+      <ion-col style="margin-top:50px">
+    <img src="assets/logo.png" alt="">
+      </ion-col>
+     
+    </ion-row >
+    <ion-row >
+      <ion-col style="margin-top:30px">
+        <h3>يرجى اختيار اللغة </h3>
+        <h3>Please select your language</h3>
+      </ion-col>
+     
+    </ion-row >
+
+    <ion-row style="justify-content: center;margin-top: 30px;">
+      <ion-button shape="round" style="color:white ;" (click)="goRegister()" >ِEnglish</ion-button>
+      <ion-button shape="round"  color="secondary" (click)="goHomeArabic()" >العربية</ion-button>
+  
+  </ion-row>
+
+
+
+
+
+
+
+
+    
   </div>
 </ion-content>

@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar style="height: 100px;text-align: center;align-items: center;display: flex;">
+
+   <img src="../../../assets/logo.png" alt="image logo" style="width: 90px" (click)="goHome()" />
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card>
+
+
+    <ion-card-header>
+
+
+    </ion-card-header>
+
+    <ion-card-content>
+<ion-item>
+      <ion-label >
+        <h3>Name</h3>
+
+     
+      </ion-label>
+      <ion-input name="name"class="form-control"  formcontrolName="name" placeholder="Enter Your Name"  type="text" required="true" [(ngModel)]="userdata.name" style="margin-left: 50px ;font-size:15px"></ion-input>
+
+    </ion-item>
+
+<ion-item>
+
+<ion-label >
+
+  <h3>Email</h3>
+
+
+</ion-label>
+<ion-input name="email" class="form-control" formcontrolName="email" placeholder="Enter Your Mail" type="email" [(ngModel)]="userdata.email"  style="margin-left: 50px ;font-size:15px"></ion-input>
+
+
+
+
+
+</ion-item>
+
+
+
+
+
+
+
+<ion-item>
+
+<ion-label >
+        <h3>Phone</h3>
+     
+      </ion-label>
+      <ion-input name="phone"  class="form-control"  formcontrolName="phone" placeholder="Enter Your Phone" type="tel" [(ngModel)]="userdata.phone"  style="margin-left: 50px ;font-size:15px"></ion-input>
+    </ion-item>
+  </ion-card-content>
+
+
+
+
+
+
+    
+  </ion-card>
+  
+
+
+  <div style="text-align: center;margin-top: 30px;">
+  <ion-button (submit)="submitInfo()"  expand="block" >Register</ion-button>
+
+
+
+</div>
+</ion-content>

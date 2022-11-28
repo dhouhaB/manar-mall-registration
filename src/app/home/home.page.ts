@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SubmittedData } from '../modals/interfaces';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+
+  constructor(
+    private nav:NavController
+  ) {}
+goRegister()
+{
+  this.nav.navigateForward('/register')
+}
+goHomeArabic()
+{
+  this.nav.navigateForward('/register-ar')
+}
+
 
 }

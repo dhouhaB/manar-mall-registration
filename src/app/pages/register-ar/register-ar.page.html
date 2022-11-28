@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar style="height: 100px;text-align: center;align-items: center;display: flex;">
+
+    <img src="../../../assets/logo.png" alt="image logo" style="width: 90px" (click)="goHome()" />
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+ 
+    <ion-card-header>
+
+
+    </ion-card-header>
+  
+    <ion-card-content  style="direction:rtl">
+<ion-item>
+      <ion-label style="width: 95px;">
+        <h3>الإسم</h3>
+
+     
+      </ion-label>
+      <ion-input name="name" placeholder="أدخل الاسم"  type="text" required="true" style="margin-left: 50px ;font-size:15px"  [(ngModel)]="userdata.name" ></ion-input>
+
+    </ion-item>
+
+<ion-item>
+
+<ion-label style="width: 95px;" >
+
+  <h3>البريد الإلكتروني</h3>
+
+
+</ion-label>
+<ion-input name="email" placeholder="أدخل البريد الإلكتروني" type="email" style="margin-left: 50px ;font-size:15px"  [(ngModel)]="userdata.email" ></ion-input>
+
+
+
+
+
+</ion-item>
+
+
+
+
+
+
+
+<ion-item>
+
+<ion-label style="width: 95px;">
+        <h3>الهاتف</h3>
+     
+      </ion-label>
+      <ion-input name="phone" placeholder="أدخل الهاتف" type="tel" style="margin-left: 50px ;font-size:15px"  [(ngModel)]="userdata.phone" ></ion-input>
+    </ion-item>
+
+
+
+
+
+
+    </ion-card-content>
+    
+  </ion-card>
+  <div style="text-align: center;margin-top: 30px;">
+  <ion-button (click)="submitInfo()">Register</ion-button>
+</div>
+
+</ion-content>
